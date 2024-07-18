@@ -1,0 +1,283 @@
+/* Reset CSS untuk menghilangkan margin dan padding default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling umum untuk body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Warna background */
+    color: #333; /* Warna teks */
+}
+
+/* Styling untuk header */
+header {
+    background-color: #3498db; /* Warna latar header */
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+header nav ul li a {
+    color: #fff; /* Warna teks menu */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styling untuk hero section */
+.hero {
+    background-color: #ecf0f1; /* Warna latar hero section */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #2c3e50; /* Warna teks hero */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #7f8c8d; /* Warna teks deskripsi hero */
+}
+
+.hero .cta-button {
+    display: inline-block;
+    background-color: #e67e22; /* Warna background tombol */
+    color: #fff; /* Warna teks tombol */
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+    background-color: #d35400; /* Warna background tombol saat hover */
+}
+
+/* Styling untuk bagian tentang kami */
+.about-us {
+    background-color: #f39c12; /* Warna latar tentang kami */
+    color: #fff; /* Warna teks tentang kami */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup {
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.popup h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.popup p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.popup form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.popup input,
+.popup textarea,
+.popup button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.popup button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #2980b9;
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #e74c3c;
+}
+
+/* Styling untuk bagian proyek */
+.projects {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #fff; /* Warna latar proyek */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.project-item h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.project-item p {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: #555; /* Warna teks deskripsi proyek */
+}
+
+/* Styling untuk bagian donasi sekarang */
+.donate-now {
+    background-color: #1abc9c; /* Warna latar donate now */
+    color: #fff; /* Warna teks donate now */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.donate-now h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.donate-now p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.donate-now .cta-button {
+    display: inline-block;
+    background-color: #16a085; /* Warna background tombol donate now */
+    color: #fff; /* Warna teks tombol donate now */
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.donate-now .cta-button:hover {
+    background-color: #1abc9c; /* Warna background tombol saat hover */
+}
+
+/* Styling untuk footer */
+footer {
+    background-color: #34495e; /* Warna latar footer */
+    color: #fff; /* Warna teks footer */
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media query untuk responsif */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about-us h2 {
+        font-size: 2rem;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+    }
+
+    .projects h2 {
+        font-size: 2rem;
+    }
+
+    .project-item {
+        max-width: 100%;
+    }
+
+    .donate-now h2 {
+        font-size: 2rem;
+    }
+
+    .donate-now p {
+        font-size: 1rem;
+    }
+}

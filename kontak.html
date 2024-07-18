@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Buat file styles.css untuk styling -->
+    <script src="script.js" defer></script> <!-- Buat file script.js untuk script JavaScript -->
+</head>
+<body>
+<header>
+    <h1>Kontak</h1>
+</header>
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Proyek</a></li>
+            <li><a href="#">Donasi</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+<div id="contact-popup" class="overlay">
+    <div class="popup">
+        <h2>Kontak Kami</h2>
+        <p>Isi formulir di bawah untuk menghubungi kami.</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Nama Anda" required>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <textarea name="message" placeholder="Pesan Anda" rows="4" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+        <a class="close" href="#">&times;</a>
+    </div>
+</div>
+</body>
+</html>
